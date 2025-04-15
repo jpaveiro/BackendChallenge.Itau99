@@ -9,8 +9,8 @@ import java.time.OffsetDateTime;
 @Getter
 @Setter
 public class Transacao {
-    private final BigDecimal valor;
-    private final OffsetDateTime dataHora;
+    private BigDecimal valor;
+    private OffsetDateTime dataHora;
 
     public Transacao(BigDecimal valor, OffsetDateTime dataHora) {
         this.valor = valor;
