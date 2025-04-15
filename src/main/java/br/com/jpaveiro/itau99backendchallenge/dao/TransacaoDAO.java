@@ -22,6 +22,11 @@ public class TransacaoDAO implements DAOContract<Transacao> {
     }
 
     @Override
+    public void apagarTodos() {
+        this.transacoes.clear();
+    }
+
+    @Override
     public Stream<Transacao> listarTodos() {
         return transacoes.stream();
     }
