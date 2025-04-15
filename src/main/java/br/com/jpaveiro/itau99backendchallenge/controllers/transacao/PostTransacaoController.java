@@ -30,6 +30,19 @@ public class PostTransacaoController {
         Optional<BigDecimal> valor = Optional.ofNullable(dto.valor());
         Optional<OffsetDateTime> dataHora = Optional.ofNullable(dto.dataHora());
 
+        boolean valorValido = valor
+                .map(v -> v.compareTo(BigDecimal.ZERO) >= 0)
+                .orElse(false);
+
+        boolean dataHoraValido = dataHora
+                .map(d -> Duration.between(OffsetDateTime.now(), OffsetDateTime.now()).abs().toMillis() <= 1000)
+                .orElse(false);
+
+        if (!valorValido || !dataHoraValido) {
+            return ResponseEntity.status(422)
+                    .build();
+        }
+
         dao.adicionar(new Transacao(
                 valor.get(),
                 dataHora.get()
