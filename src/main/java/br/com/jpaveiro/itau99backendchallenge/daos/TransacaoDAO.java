@@ -1,7 +1,7 @@
-package br.com.jpaveiro.itau99backendchallenge.dao;
+package br.com.jpaveiro.itau99backendchallenge.daos;
 
 import br.com.jpaveiro.itau99backendchallenge.contracts.DAOContract;
-import br.com.jpaveiro.itau99backendchallenge.models.Transacao;
+import br.com.jpaveiro.itau99backendchallenge.models.domain.Transacao;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

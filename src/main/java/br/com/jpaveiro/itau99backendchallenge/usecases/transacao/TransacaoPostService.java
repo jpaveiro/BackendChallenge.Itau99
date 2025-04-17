@@ -1,9 +1,9 @@
-package br.com.jpaveiro.itau99backendchallenge.services.transacao;
+package br.com.jpaveiro.itau99backendchallenge.usecases.transacao;
 
-import br.com.jpaveiro.itau99backendchallenge.dao.TransacaoDAO;
-import br.com.jpaveiro.itau99backendchallenge.dto.transacao.TransacaoPostDTO;
+import br.com.jpaveiro.itau99backendchallenge.daos.TransacaoDAO;
+import br.com.jpaveiro.itau99backendchallenge.dtos.transacao.TransacaoPostDTO;
 import br.com.jpaveiro.itau99backendchallenge.models.response.StandardResponse;
-import br.com.jpaveiro.itau99backendchallenge.models.Transacao;
+import br.com.jpaveiro.itau99backendchallenge.models.domain.Transacao;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;

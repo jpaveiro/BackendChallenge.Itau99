@@ -1,4 +1,4 @@
-package br.com.jpaveiro.itau99backendchallenge.dto.transacao;
+package br.com.jpaveiro.itau99backendchallenge.dtos.transacao;
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;

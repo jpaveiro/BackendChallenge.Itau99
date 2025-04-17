@@ -1,7 +1,7 @@
 package br.com.jpaveiro.itau99backendchallenge.controllers.transacao;
 
-import br.com.jpaveiro.itau99backendchallenge.dto.transacao.TransacaoPostDTO;
-import br.com.jpaveiro.itau99backendchallenge.services.transacao.TransacaoPostService;
+import br.com.jpaveiro.itau99backendchallenge.dtos.transacao.TransacaoPostDTO;
+import br.com.jpaveiro.itau99backendchallenge.usecases.transacao.TransacaoPostService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

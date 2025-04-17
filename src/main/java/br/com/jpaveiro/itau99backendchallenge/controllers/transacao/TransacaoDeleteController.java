@@ -1,6 +1,6 @@
 package br.com.jpaveiro.itau99backendchallenge.controllers.transacao;
 
-import br.com.jpaveiro.itau99backendchallenge.services.transacao.TransacaoDeleteService;
+import br.com.jpaveiro.itau99backendchallenge.usecases.transacao.TransacaoDeleteService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;

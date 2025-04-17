@@ -1,7 +1,7 @@
-package br.com.jpaveiro.itau99backendchallenge.services.transacao;
+package br.com.jpaveiro.itau99backendchallenge.usecases.transacao;
 
-import br.com.jpaveiro.itau99backendchallenge.dao.TransacaoDAO;
-import br.com.jpaveiro.itau99backendchallenge.models.Transacao;
+import br.com.jpaveiro.itau99backendchallenge.daos.TransacaoDAO;
+import br.com.jpaveiro.itau99backendchallenge.models.domain.Transacao;
 import br.com.jpaveiro.itau99backendchallenge.models.response.TransacaoEstatisticasResponse;
 import org.springframework.stereotype.Service;
 
@@ -11,10 +11,10 @@ import java.util.DoubleSummaryStatistics;
 import java.util.List;
 
 @Service
-public class TransacaoEstatisticasService {
+public class TransacaoEstatisticaService {
     private final TransacaoDAO dao;
 
-    public TransacaoEstatisticasService(final TransacaoDAO dao) {
+    public TransacaoEstatisticaService(final TransacaoDAO dao) {
         this.dao = dao;
     }
 

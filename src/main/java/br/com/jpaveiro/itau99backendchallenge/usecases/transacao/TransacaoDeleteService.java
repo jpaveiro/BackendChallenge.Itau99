@@ -1,6 +1,6 @@
-package br.com.jpaveiro.itau99backendchallenge.services.transacao;
+package br.com.jpaveiro.itau99backendchallenge.usecases.transacao;
 
-import br.com.jpaveiro.itau99backendchallenge.dao.TransacaoDAO;
+import br.com.jpaveiro.itau99backendchallenge.daos.TransacaoDAO;
 import org.springframework.stereotype.Service;
 
 @Service
