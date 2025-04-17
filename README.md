@@ -27,8 +27,8 @@ Registra uma nova transação com valor e data/hora.
 }
 ```
 <b>📝 Observação:</b> Substitua `dataHora` pelo horário atual no formato ISO 8601 com offset.
-<br>
-<br>
+<br><br>
+
 <b style="font-size: 150%;">Deletar todas as transações</b>
 <br>
 Remove todas as transações armazenadas.
@@ -37,9 +37,7 @@ Remove todas as transações armazenadas.
 ```json
 // 200 Ok
 ```
-
-<br>
-<br>
+<br><br>
 
 <b style="font-size: 150%;">Obter estatísticas</b>
 <br>
@@ -50,6 +48,7 @@ Calcula estatísticas com base nas transações dos últimos 60 segundos.
 • <b>Response:</b>
 
 ```json
+// 200 Ok
 {
     "count": 10,
     "sum": 1234.56,
