@@ -1,0 +1,25 @@
+### Transação API
+
+### 1. Receber transação
+POST http://localhost:8080/transacao
+Content-Type: application/json
+
+# 🔁 Substitua "dataHora" pelo horário atual no formato ISO 8601 com offset
+# Exemplo: 2025-04-17T15:30:00.000-03:00
+
+{
+  "valor": 123.45,
+  "dataHora": "2020-08-07T12:34:56.789-03:00"
+}
+
+###
+
+### 2. Limpar transações
+DELETE http://localhost:8080/transacao
+Content-Type: application/json
+
+###
+
+### 3. Calcular Estatísticas
+GET http://localhost:8080/estatistica
+Content-Type: application/json
