@@ -2,7 +2,7 @@ package br.com.jpaveiro.itau99backendchallenge.services.transacao;
 
 import br.com.jpaveiro.itau99backendchallenge.dao.TransacaoDAO;
 import br.com.jpaveiro.itau99backendchallenge.dto.transacao.TransacaoPostDTO;
-import br.com.jpaveiro.itau99backendchallenge.models.StandardResponse;
+import br.com.jpaveiro.itau99backendchallenge.models.response.StandardResponse;
 import br.com.jpaveiro.itau99backendchallenge.models.Transacao;
 import org.springframework.stereotype.Service;
 
@@ -28,8 +28,7 @@ public class TransacaoPostService {
                 .orElse(false);
 
         boolean dataHoraValido = dataHora
-                // only for tests
-                .map(d -> Duration.between(OffsetDateTime.now(), OffsetDateTime.now()).abs().toMillis() <= 1000)
+                .map(d -> Duration.between(dataHora.get(), OffsetDateTime.now()).abs().toMillis() <= 1000)
                 .orElse(false);
 
         if (!valorValido || !dataHoraValido) {
