@@ -1,4 +1,4 @@
-package br.com.jpaveiro.itau99backendchallenge.models;
+package br.com.jpaveiro.itau99backendchallenge.models.response;
 
 import lombok.Builder;
 import lombok.Getter;
