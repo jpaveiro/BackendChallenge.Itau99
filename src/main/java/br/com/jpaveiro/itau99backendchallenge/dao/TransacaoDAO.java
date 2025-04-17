@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Repository
@@ -35,5 +36,12 @@ public class TransacaoDAO implements DAOContract<Transacao> {
     public Stream<Transacao> listarTodosQue(Condicao<Transacao> condicao) {
         return this.transacoes.stream()
                 .filter(condicao::testar);
+    }
+
+    @Override
+    public List<Transacao> listarTodosQueList(Condicao<Transacao> condicao) {
+        return this.transacoes.stream()
+                .filter(condicao::testar)
+                .collect(Collectors.toList());
     }
 }
