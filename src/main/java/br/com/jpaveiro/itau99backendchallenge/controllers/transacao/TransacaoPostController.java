@@ -30,7 +30,7 @@ public class TransacaoPostController {
                     .build();
         }
 
-        log.info("DELETE /transacao - Processamento finalizado.");
+        log.info("POST /transacao - Processamento finalizado.");
         return ResponseEntity
                 .status(201)
                 .build();
